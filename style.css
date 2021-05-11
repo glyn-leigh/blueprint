@@ -1,0 +1,11 @@
+body{
+    background-color:#d9266d;
+}
+
+.workingTitle{
+    font-size: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
