@@ -1,11 +1,208 @@
 body{
-    background-color:#d9266d;
+    background-color:white;
 }
 
-.workingTitle{
-    font-size: 80px;
+
+.navBarHome{
+    background-color:#3A59A8;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    
+
+}
+
+.boxBackground{
+    background-color: #D8E5FF;
+    width: 90%;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.Logo{
+    float: left;
+    padding: 2px;
+    margin:4px;
+}
+
+.listContainer{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+ul {
+    padding: 2px;
+    margin: 0px;
+    text-align: center;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+
+li {
+    list-style-type: none;
+    padding: 12px;
+    height: 24px;
+    margin-top: 4px;
+    display: inline;
+  }
+
+Button {
+    margin: 8px;
+    color: white;
+    background-color:#23A6F0 ;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.introBox{
+    background-color: #D8E5FF;
+    
+}
+
+.introContent{
+    width:80%;
+    height:min-content;
+    display: inline-flex;
+    
+}
+
+.introBox p {
+    text-align: center;
+    margin-top: 4px;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px rgb(58, 56, 56);
+}
+
+.introBox img {
+    margin-left: 260px;
+    display: block;
+}
+
+.introDesc{
+    height: fit-content;
+    width: fit-content;
+}
+
+#introDesc{
+    font-weight:normal;
+    font-size: 24px;
+    text-align: left;
+    text-shadow: none;
+    
+    
+}
+.startButton{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    
+    
+}
+#startbutton{
+    padding: 2%;
+}
+.infoBox{
+    background-color: #3A59A8;
+}
+
+
+.infoContent{
+    width:80%;
+    height: min-content;
+    display: inline-flex;
+    border: solid orangered;
+    
+
+}
+
+.infoBox img{
+    display: block;
+    margin:auto;
+    
+}
+
+.infoButton{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.infoBox p {
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: none;
+}
+.infoDesc{
+    
+}
+#infoDesc{
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+    text-shadow: none;
+}
+.workBox{
+    background-color: #3A59A8;
+   
+    
+}
+.workContent{
+    width:80%;
+    display: inline-flex;
+    height: min-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "workDesc workDesc"
+    "workButton workImage";
+}
+.workBox p{
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: none;
+}
+.workBox img{
+    
+    border: solid orangered;
+}
+.workImage{
+    display: block;
+    margin:auto;
+}
+
+#workDesc{
+    font-weight:normal;
+    font-size: 24px;
+    text-align: left;
+    text-shadow: none;
+    
+    
+}
+
+.testimonialBox{
+    background-color: #ACD6DF;
+    width: 100%;
+    
 }
