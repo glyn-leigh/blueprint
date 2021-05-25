@@ -1,10 +1,15 @@
 *{
     font-family: 'Montserrat', sans-serif;;
 }
+
 body{
     background-color:white;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .navBarHome{
     background-color:#3A59A8;
