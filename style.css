@@ -1,3 +1,6 @@
+*{
+    font-family: 'Montserrat', sans-serif;;
+}
 body{
     background-color:white;
 }
@@ -13,10 +16,11 @@ body{
 
 }
 
+
 .boxBackground{
     background-color: #D8E5FF;
     width: 90%;
-    height: 450px;
+    height: fit-content;
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 18px;
@@ -32,7 +36,12 @@ body{
 .listContainer{
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: inline-flex;
+}
+.buttonContainer{
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
 }
 
 ul {
@@ -40,11 +49,12 @@ ul {
     margin: 0px;
     text-align: center;
     color: white;
+    display: inline;
   }
 
 li {
     list-style-type: none;
-    padding: 12px;
+    padding: 10px;
     height: 24px;
     margin-top: 4px;
     display: inline;
@@ -53,14 +63,24 @@ li {
 Button {
     margin: 8px;
     color: white;
-    background-color:#23A6F0 ;
+    background-color:#23A6F0;
     border: none;
-    border-radius: 5px;
+    white-space: nowrap;
+    border-radius: 10px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     
+}
+
+.heading{
+    text-align: center;
+    margin-top: 4px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #3A59A8;
+    text-shadow: 0px 2px 2px rgb(58, 56, 56);
 }
 
 .introBox{
@@ -73,14 +93,6 @@ Button {
     height:min-content;
     display: inline-flex;
     
-}
-
-.introBox p {
-    text-align: center;
-    margin-top: 4px;
-    font-size: 48px;
-    font-weight: bold;
-    text-shadow: 0px 2px 2px rgb(58, 56, 56);
 }
 
 .introBox img {
@@ -98,21 +110,25 @@ Button {
     font-size: 24px;
     text-align: left;
     text-shadow: none;
+    color: #737373;
     
     
 }
 .startButton{
     display: block;
-    width: fit-content;
-    height: fit-content;
-    
     
 }
 #startbutton{
-    padding: 2%;
+    padding: 3%;
+    font-weight: bold;
+    background-color: #3A59A8;
+    
+    
+    
 }
 .infoBox{
-    background-color: #3A59A8;
+    background-color: #86B1F2;
+    
 }
 
 
@@ -120,7 +136,7 @@ Button {
     width:80%;
     height: min-content;
     display: inline-flex;
-    border: solid orangered;
+    margin-left: 150px;
     
 
 }
@@ -147,9 +163,7 @@ Button {
     color: white;
     text-shadow: none;
 }
-.infoDesc{
-    
-}
+
 #infoDesc{
     text-align: left;
     margin-top: 4px;
@@ -159,6 +173,7 @@ Button {
     color: white;
     text-shadow: none;
 }
+
 .workBox{
     background-color: #3A59A8;
    
@@ -168,11 +183,7 @@ Button {
     width:80%;
     display: inline-flex;
     height: min-content;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "workDesc workDesc"
-    "workButton workImage";
+    margin-left: 150px;
 }
 .workBox p{
     text-align: left;
@@ -185,7 +196,6 @@ Button {
 }
 .workBox img{
     
-    border: solid orangered;
 }
 .workImage{
     display: block;
@@ -200,9 +210,74 @@ Button {
     
     
 }
+h1{
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 48px;
+    margin-left: 20px;
+
+}
 
 .testimonialBox{
     background-color: #ACD6DF;
-    width: 100%;
+    padding: 10px;
+}
+
+.testimonialBubble1{
+    display: inline-flex;
+    align-items: center;  
+}
+
+.testimonialBubble2{
+    display: inline-flex;
+    align-items: center;  
+}
+
+.testimonialBubble3{
+    display: inline-flex;
+    align-items: center;  
+}
+
+.wordBubble {
+    background-color: white;
+    border-radius: 12px;
+    padding:2%;
+    margin: 0 auto;
+    margin-top: 10px;
     
+}
+.wordBubble p {
+    margin: 0;
+}
+.circleImage{
+    float: left;
+}
+.rPic{
+    color: #23A6F0;
+    font-size: 18px;
+    margin: 0;
+}
+#specialPic{
+    text-align: end;
+}
+
+#specialStars{
+    position: relative;
+    left: 90%;
+}
+
+
+.footerHome{
+    margin-top: 20px;
+    background-color:#3A59A8;
+    color: white;
+    width: 100%;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.footerHome p {
+    margin: 10px;
+    text-align: center;
 }
