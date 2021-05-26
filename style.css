@@ -192,6 +192,8 @@ Button {
 
 .infoButton{
     display: block;
+    padding: 3%;
+    font-size: 2vw;
     width: fit-content;
     height: fit-content;
 
