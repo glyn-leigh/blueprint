@@ -1,5 +1,6 @@
 *{
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -17,6 +18,7 @@ html, body {
     height: fit-content;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+
     
 
 }
@@ -36,17 +38,38 @@ html, body {
     float: left;
     padding: 2px;
     margin:4px;
+    width: auto;
+    height: auto;
 }
 
 .listContainer{
   align-items: center;
   justify-content: center;
-  display: inline-flex;
+  display: inline;
+  width: auto;
+  height: auto;
+  margin:0 auto;
 }
+
+.listContainer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 .buttonContainer{
     justify-content: flex-end;
     align-items: flex-end;
     display: flex;
+}
+@media only screen and (max-width: 768px){
+    .buttonContainer{
+        flex-direction: column;
+    }
+    .listContainer{
+        flex-direction: column;
+    }
+    
 }
 
 ul {
@@ -60,9 +83,13 @@ ul {
 li {
     list-style-type: none;
     padding: 10px;
-    height: 24px;
     margin-top: 4px;
     display: inline;
+    text-align: left;
+  }
+
+  li a {
+    color: white;
   }
 
 Button {
@@ -82,10 +109,18 @@ Button {
 .heading{
     text-align: center;
     margin-top: 4px;
-    font-size: 48px;
+    font-size: 4vw;
     font-weight: bold;
     color: #3A59A8;
     text-shadow: 0px 2px 2px rgb(58, 56, 56);
+}
+.startImage{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 20px 25px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
 }
 
 .introBox{
@@ -93,16 +128,11 @@ Button {
     
 }
 
-.introContent{
-    width:80%;
-    height:min-content;
-    display: inline-flex;
-    
-}
 
 .introBox img {
-    margin-left: 260px;
+    margin-left: 10%;
     display: block;
+    height: auto;
 }
 
 .introDesc{
@@ -112,21 +142,28 @@ Button {
 
 #introDesc{
     font-weight:normal;
-    font-size: 24px;
+    font-size: 1.5vw;
     text-align: left;
     text-shadow: none;
     color: #737373;
+    display: block;
+    height: auto;
+    width: fit-content;
+    margin-right: 10px;
+    overflow-wrap: break-word;
     
     
 }
 .startButton{
     display: block;
+    grid-area: 2/2/2/2;
     
 }
 #startbutton{
     padding: 3%;
     font-weight: bold;
     background-color: #3A59A8;
+    font-size: 2vw;
     
     
     
@@ -138,10 +175,10 @@ Button {
 
 
 .infoContent{
-    width:80%;
     height: min-content;
-    display: inline-flex;
-    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 66% 33%;
+    margin: 20px;
     
 
 }
@@ -149,6 +186,7 @@ Button {
 .infoBox img{
     display: block;
     margin:auto;
+    width: 100%;
     
 }
 
@@ -163,7 +201,7 @@ Button {
     text-align: left;
     margin-top: 4px;
     margin-left: 20px;
-    font-size: 48px;
+    font-size: 4vw;
     font-weight: bold;
     color: white;
     text-shadow: none;
@@ -173,7 +211,7 @@ Button {
     text-align: left;
     margin-top: 4px;
     margin-left: 20px;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-weight: normal;
     color: white;
     text-shadow: none;
@@ -181,20 +219,19 @@ Button {
 
 .workBox{
     background-color: #3A59A8;
-   
-    
 }
 .workContent{
-    width:80%;
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     height: min-content;
-    margin-left: 150px;
+    margin-left: 20px;
+    
 }
 .workBox p{
     text-align: left;
     margin-top: 4px;
     margin-left: 20px;
-    font-size: 48px;
+    font-size: 4vw;
     font-weight: bold;
     color: white;
     text-shadow: none;
@@ -203,21 +240,99 @@ Button {
 .workImage{
     display: block;
     margin:auto;
+    size: 100%;
 }
 
-#workDesc{
+.workDesc{
     font-weight:normal;
-    font-size: 24px;
-    text-align: left;
+    font-size: 1.5vw;
     text-shadow: none;
-    
-    
 }
+
+.workDesc ul{
+    text-align: center;
+}
+.workList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 40px;
+    border: solid;
+
+}
+
+.workList li{
+    display: grid;
+    grid-template-columns: min-content 500px;
+    column-gap: 0;
+    row-gap: 30px;
+    font-size: 1.5vw;
+    white-space: nowrap;
+      
+}
+
+
+
+#firstList::before{
+    content: "";
+    background: center/contain no-repeat url("./images/Num1Circle.svg");
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#secondList::before{
+    content: "";
+    background: center/contain no-repeat url("./images/Num2Circle.svg");
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#thirdList::before{
+    content: "";
+    background: center/contain no-repeat url("./images/Num3Circle.svg");
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#fourthList::before{
+    content: "";
+    background: center/contain no-repeat url("./images/Num4Circle.svg");
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#fifthList::before{
+    content: "";
+    background: center/contain no-repeat url("./images/Num5Circle.svg");
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
 h1{
     color: white;
     font-weight: bold;
     margin-top: 10px;
-    font-size: 48px;
+    font-size: 4vw;
+    margin-left: 20px;
+
+}
+h2{
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 3vw;
     margin-left: 20px;
 
 }
@@ -252,13 +367,14 @@ h1{
 }
 .wordBubble p {
     margin: 0;
+    font-size: 1.5vw;
 }
 .circleImage{
     float: left;
 }
 .rPic{
     color: #23A6F0;
-    font-size: 18px;
+    font-size: 1.5vw;
     margin: 0;
 }
 #specialPic{
@@ -266,9 +382,9 @@ h1{
 }
 
 #specialStars{
-    position: relative;
-    left: 85%;
-    display: block;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
 }
 
 
