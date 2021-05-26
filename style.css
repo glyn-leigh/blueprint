@@ -199,9 +199,7 @@ Button {
     color: white;
     text-shadow: none;
 }
-.workBox img{
-    
-}
+
 .workImage{
     display: block;
     margin:auto;
@@ -269,7 +267,8 @@ h1{
 
 #specialStars{
     position: relative;
-    left: 90%;
+    left: 85%;
+    display: block;
 }
 
 
